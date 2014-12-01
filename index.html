@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>atUVa Revamped</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="http://www.queness.com/js/bsa2.js"></script>
+	<style type="text/css">
+		
+
+		.item {
+			text-align:center;
+			float:left;
+			margin:5px;
+			position:relative;			
+		}
+		
+			.item,
+			.item-hover,
+			.item-hover .mask,
+			.item-img,
+			.item-info {
+				width: 300px;
+				height: 225px;
+				border-radius: 20px;
+			}
+
+			.item-hover,
+			.item-hover .mask,
+			.item-img { 
+				position:absolute;
+				top:0;
+				left:0;				
+			}			
+		
+			.item-type-line .item-hover {	
+				z-index:100;	
+				-webkit-transition: all 300ms ease-out;
+				-moz-transition: all 300ms ease-out;
+				-o-transition: all 300ms ease-out;
+				transition: all 300ms ease-out;	
+				opacity:0; 						/* opacity of hover */
+				cursor:auto;						
+				display:block;
+				text-decoration:none;
+				text-align:center;
+			}
+			
+				.item-type-line .item-info {
+					z-index:10;
+					color:#ffa500;			/* text color */
+					font-weight: bold;
+					display:table-cell;
+					vertical-align:bottom;
+					position:relative;
+					z-index:5;				 					
+				}
+			
+				.item-type-line .item-info .headline {
+					font-size:20px;					
+				}
+				
+				.item-type-line .item-info .line {
+					 height:1px;
+					 width:0%;
+					 margin:15px auto;
+					 background-color:#ffffff;
+					-webkit-transition: all 500ms ease-out;
+					-moz-transition: all 500ms ease-out;
+					-o-transition: all 500ms ease-out;
+					transition: all 500ms ease-out;					 
+
+				}
+				
+				.item-type-line .item-info .date {
+					font-size:12px;
+				}
+				
+				.item-type-line .item-hover .mask {
+					background-color:#0000ff;			/* color of hover */
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+					filter: alpha(opacity=50);										
+					opacity:0.5;
+					z-index:0;
+				}
+				
+				.item-type-line .item-hover:hover .line {
+					width:40%;
+				}
+				
+				.item-type-line .item-hover:hover {
+					opacity:1;
+				}				
+			
+			.item-img {			
+				background-color: white;
+				z-index:0;			
+			}
+					
+		
+	</style>
+	
+	<!--[if lte IE 8]>
+	<style type="text/css">
+		.item-hover .item-info {
+			display:none;
+			top:30%;
+		}
+		
+		.item-hover .mask {
+			display:none;
+		}
+		
+		.item-hover:hover .item-info,
+		.item-hover:hover .mask {
+			display:block;
+		}		
+	</style>
+	<![endif]-->		
+	
+</head>
+<body>
+	
+<div class="container">	
+	
+	<div class="item item-type-line">
+		<a class="item-hover" href="https://atuva.student.virginia.edu/Organizations" target="_self">
+			<div class="item-info">
+				<div class="headline">Find a CIO</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\search.png" alt="" /></div>
+	</div>	
+	
+	<div class="item item-type-line">
+		<a class="item-hover" href="about:blank" target="_self">
+			<div class="item-info">
+				<div class="headline">Request Reimbursement</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\money.png" alt="" /></div>
+	</div>	
+	
+	<div class="item item-type-line">
+		<a class="item-hover" href="http://uva.ventfull.com" target="_blank">
+			<div class="item-info">
+				<div class="headline">Event Calendar</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\docket.png" alt="" /></div>
+	</div>	
+	
+	<div class="item item-type-line">
+		<a class="item-hover" href="https://atuva.student.virginia.edu/register" target="_self">
+			<div class="item-info">
+				<div class="headline">Create a CIO</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\uva.jpg" alt="" /></div>
+	</div>	
+		<div class="item item-type-line">
+		<a class="item-hover" href="http://www.ciosatuva.com/sign-up/" target="_blank">
+			<div class="item-info">
+				<div class="headline">Request a CIO Website</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\uva-logo.jpg" alt="" /></div>
+	</div>	
+	
+	<div class="item item-type-line">
+		<a class="item-hover" href="mailto:studco-vpo@virginia.edu" target="_self">
+			<div class="item-info">
+				<div class="headline">Email the VPO</div>
+			</div>
+			<div class="mask"></div>
+		</a>
+		<div class="item-img"><img src="images\email.jpg" alt="" /></div>
+	</div>					
+	
+		
+	
+</div>
+	
+</body>
+</html>
